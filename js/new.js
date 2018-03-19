@@ -96,10 +96,10 @@ user.TEST()
 console.log('start');
 var data = 0;
 var myPromise = new Promise(function(resolve, reject){
-  id(data){
+  if(data){
     resolve('resolve');
   }else{
-    reject('reject');
+    reject('has been rejected');
   }
 });
 
